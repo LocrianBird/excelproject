@@ -1,0 +1,24 @@
+{
+  "name": "excelproject",
+  "version": "1.0.0",
+  "description": "Pure JavaScript Excel App",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LocrianBird/excelproject.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "excel"
+  ],
+  "author": "Maggie Podliian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LocrianBird/excelproject/issues"
+  },
+  "homepage": "https://github.com/LocrianBird/excelproject#readme"
+}
