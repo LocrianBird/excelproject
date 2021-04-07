@@ -1,12 +1,11 @@
 export class TableSelection {
-  static className = 'selected';
+  static className = 'selected'
 
   constructor() {
     this.group = [];
     this.current = null;
   }
 
-  // $el instanceof DOM === true
   select($el) {
     this.clear();
     $el.focus().addClass(TableSelection.className);
@@ -19,9 +18,18 @@ export class TableSelection {
     this.group = [];
   }
 
+  get selectedIds() {
+    return this.group.map($el => $el.id());
+  }
+
   selectGroup($group = []) {
     this.clear();
+
     this.group = $group;
     this.group.forEach($el => $el.addClass(TableSelection.className));
+  }
+
+  applyStyle(style) {
+    this.group.forEach($el => $el.css(style));
   }
 }
