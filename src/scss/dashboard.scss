@@ -2,7 +2,8 @@
 @import "mixins";
 
 .db {
-  & .db-header {
+
+  &__header {
     position: fixed;
     left: 0;
     right: 0;
@@ -15,13 +16,14 @@
     box-shadow: 0 2px 5px 2px rgba(60, 64, 67, 0.15);
     z-index: 1000;
   }
-  & .db-new {
+
+  &__new {
     margin-top: $db-header-height;
     padding: 1.5rem;
     background: #dadce0;
   }
 
-  & .db-create {
+  &__create {
     width: 160px;
     height: 160px;
     background: #fff;
@@ -42,15 +44,16 @@
     }
   }
 
-  & .db-view {
+  &__view {
     max-width: 1000px;
     margin: 0 auto;
   }
-  & .db-table {
+
+  &__table {
     padding: 1rem;
   }
 
-  & .db-list-header {
+  &__list-header {
     display: flex;
     justify-content: space-between;
     color: #202124;
@@ -60,11 +63,11 @@
     padding: 0 12px;
   }
 
-  & .db-list {
+  &__list {
     @include clear-list;
   }
 
-  & .db-record {
+  &__record {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,7 +79,7 @@
       border-radius: 25px;
     }
 
-    & a {
+    a {
       text-decoration: none;
       cursor: pointer;
       color: #202124;
@@ -87,4 +90,5 @@
       }
     }
   }
+
 }
