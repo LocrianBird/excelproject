@@ -1,4 +1,4 @@
 # Excel Project
 ## Made with pure JavaScript
 
-excelmyversion.surge.sh
+[Press here to look at my Excel Pages](excelmyversion.surge.sh)
